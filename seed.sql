@@ -1,40 +1,8 @@
--- ล้างข้อมูลเก่าออกก่อน (Optional)
-TRUNCATE TABLE attractions;
+USE attraction_db; [cite: 154]
 
--- เพิ่มข้อมูล 5 สถานที่ท่องเที่ยว
-INSERT INTO attractions (name, detail, coverimage, latitude, longitude, likes) VALUES 
-(
-    'วัดพระแก้ว (Grand Palace)', 
-    'วัดคู่บ้านคู่เมืองไทย และเป็นที่ประดิษฐานพระแก้วมรกต ตั้งอยู่ในเขตพระบรมมหาราชวัง', 
-    'https://images.unsplash.com/photo-1563227411-925769749176', 
-    13.7515, 100.4927, 
-    1500
-),
-(
-    'วัดอรุณราชวราราม (Wat Arun)', 
-    'พระปรางค์วัดอรุณริมแม่น้ำเจ้าพระยา หนึ่งในแลนด์มาร์คที่สวยที่สุดของกรุงเทพฯ', 
-    'https://images.unsplash.com/photo-1528181304800-2f140819898f', 
-    13.7437, 100.4889, 
-    950
-),
-(
-    'อุทยานแห่งชาติเอราวัณ', 
-    'น้ำตก 7 ชั้นที่มีน้ำใสเป็นสีฟ้าอมเขียว ตั้งอยู่ในจังหวัดกาญจนบุรี', 
-    'https://images.unsplash.com/photo-1589394815804-964ed962eb33', 
-    14.3686, 99.1437, 
-    2100
-),
-(
-    'ดอยอินทนนท์', 
-    'ยอดเขาที่สูงที่สุดในประเทศไทย มีอากาศหนาวเย็นตลอดปีและเส้นทางศึกษาธรรมชาติกิ่วแม่ปาน', 
-    'https://images.unsplash.com/photo-1580310614729-ccd696374e10', 
-    18.5883, 98.4871, 
-    3200
-),
-(
-    'อ่าวไร่เลย์ (Railay Beach)', 
-    'ชายหาดสวรรค์ของนักปีนผาและคนรักทะเล ล้อมรอบด้วยหน้าผาหินปูนในจังหวัดกระบี่', 
-    'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a', 
-    8.0119, 98.8367, 
-    1250
-);
+INSERT INTO attractions (name, detail, coverimage, location, rating) VALUES 
+('Spotify Camp Nou', 'The home of FC Barcelona and one of the most iconic stadiums...', 'https://imageserver.stadionwelt.de/...', 'Barcelona, Spain', 4.9),
+('Wembley Stadium', 'Known as the ''Home of Football'', it hosts major matches...', 'https://populous.com/...', 'London, England', 4.8),
+('Santiago Bernabéu', 'The legendary home of Real Madrid, recently renovated...', 'https://assets.realmadrid.com/...', 'Madrid, Spain', 4.9),
+('Allianz Arena', 'Famous for its exterior of inflated ETFE plastic panels...', 'https://b3751403.smushcdn.com/...', 'Munich, Germany', 4.7),
+('Old Trafford', 'The ''Theatre of Dreams'', home to Manchester United...', 'https://images.justpark.com/...', 'Manchester, England', 4.6);
